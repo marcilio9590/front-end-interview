@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { userInfo } from 'os';
 import { User } from 'src/app/models/user.model';
 
 @Component({
