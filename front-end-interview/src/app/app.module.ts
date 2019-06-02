@@ -7,6 +7,7 @@ import { AppComponent } from './components/app/app.component';
 import { FormComponentComponent } from './components/form-component/form-component.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { UserComponent } from './components/user/user.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { UserComponent } from './components/user/user.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
