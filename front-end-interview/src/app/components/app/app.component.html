@@ -1,10 +1,17 @@
-<div class="card form-class">
-  <div class="card-body">
-    <h5 class="card-title">{{ title }}</h5>
-    <h6 class="card-subtitle">{{subtitle}}</h6>
+<div class="left">
+  <div class="card form-class">
+    <div class="card-body">
+      <h5 class="card-title">{{ title }}</h5>
+      <h6 class="card-subtitle">{{subtitle}}</h6>
+    </div>
+    <div class="container-fluid">
+      <app-form></app-form>
+    </div>
   </div>
-  <div class="container-fluid">
-    <app-form-component></app-form-component>
+  <div class="user-card">
+    <app-user [showUser]="form.showUser" [user]="form.user"></app-user>
   </div>
 </div>
+<!-- <div class="right">
+</div> -->
 <router-outlet></router-outlet>
