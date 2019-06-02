@@ -8,12 +8,14 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './components/app/app.component';
 import { FormComponent } from './components/form/form.component';
 import { UserComponent } from './components/user/user.component';
+import { RepositoriosComponent } from './components/repositorios/repositorios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    UserComponent
+    UserComponent,
+    RepositoriosComponent
   ],
   imports: [
     BrowserModule,

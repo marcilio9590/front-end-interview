@@ -1,0 +1,20 @@
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Nome Completo</th>
+      <th scope="col">Linguagem</th>
+      <th scope="col">Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let repo of repos | async">
+      <th scope="row">{{repo.id}}</th>
+      <td>{{repo.name}}</td>
+      <th>{{repo.full_name}}</th>
+      <th>{{repo.language}}</th>
+      <th>{{repo.description}}</th>
+    </tr>
+  </tbody>
+</table>
