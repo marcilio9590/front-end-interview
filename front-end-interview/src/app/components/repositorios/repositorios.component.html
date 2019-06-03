@@ -1,4 +1,4 @@
-<table class="table table-sm">
+<table *ngIf="show_repos" class="table table-sm">
   <thead>
     <tr>
       <th scope="col">Id</th>
@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let repo of repos | async">
+    <tr *ngFor="let repo of repos">
       <th scope="row">{{repo.id}}</th>
       <td>{{repo.name}}</td>
       <th>{{repo.full_name}}</th>

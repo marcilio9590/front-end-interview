@@ -17,7 +17,8 @@ export class FormComponent implements OnInit {
   public gitUser = new FormControl('');
   public user: User;
   public showUser: Boolean = false;
-  public repos: Observable<any>;
+  public show_repos: Boolean = false;
+  public repos: [];
 
   ngOnInit() {
     this.titleInputOne = 'Usuário GitHub';
@@ -25,7 +26,12 @@ export class FormComponent implements OnInit {
 
   searchRepos() {
     this.searchUser();
-    this.repos = this.gitHubService.getReposUser(this.gitUser.value);
+    this.gitHubService.getReposUser(this.gitUser.value).subscribe(
+      res => {
+        this.repos = res;
+        this.show_repos = true;
+      }
+    );
   }
 
   searchUser() {

@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 export class RepositoriosComponent implements OnInit {
 
   @Input() repos: Observable<any>;
+  @Input() show_repos: Boolean;
 
   constructor() { }
 
