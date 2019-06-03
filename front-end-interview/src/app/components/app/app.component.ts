@@ -7,10 +7,6 @@ import { FormComponent } from '../form/form.component';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'Front End Interview';
-  subtitle = 'Compasso';
-
-  @ViewChild(FormComponent) form;
 
   constructor() { }
 

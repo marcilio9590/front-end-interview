@@ -1,8 +1,7 @@
-import { Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { User } from 'src/app/models/user.model';
 import { GithubService } from 'src/app/services/github.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-form',
@@ -10,6 +9,9 @@ import { Observable } from 'rxjs';
   styleUrls: ['./form.component.sass']
 })
 export class FormComponent implements OnInit {
+
+  title = 'Front End Interview';
+  subtitle = 'Compasso';
 
   constructor(private gitHubService: GithubService) { }
 
