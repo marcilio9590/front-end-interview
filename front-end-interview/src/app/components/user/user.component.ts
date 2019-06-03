@@ -12,6 +12,7 @@ export class UserComponent implements OnInit {
 
   @Input() user: User;
   @Input() showUser: Boolean;
+  @Input() class: String;
 
   constructor(private activatedRoute: ActivatedRoute, private gitHubService: GithubService) { }
 
@@ -19,6 +20,7 @@ export class UserComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(params => {
       if (params.get('user')) {
         this.searchUser(params.get('user'));
+        this.class = 'user-card mx-auto';
       }
     });
   }

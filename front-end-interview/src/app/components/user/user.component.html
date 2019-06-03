@@ -16,7 +16,7 @@
   </div> 
 </div>-->
 
-<div *ngIf="showUser" class="card">
+<div *ngIf="showUser" class="card" [ngClass]="class">
   <img class="card-img-top user-image" src="{{user.avatar_url}}">
   <div class="card-body">
     <h4 class="card-title">{{user.name}}</h4>
