@@ -44,7 +44,13 @@ export class FormComponent implements OnInit {
   }
 
   searchStarred() {
-
+    this.searchUser();
+    this.gitHubService.getStarredUser(this.gitUser.value).subscribe(
+      res => {
+        this.repos = res;
+        this.show_repos = true;
+      }
+    );
   }
 
 }
