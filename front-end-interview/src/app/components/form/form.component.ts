@@ -6,7 +6,7 @@ import { GithubService } from 'src/app/services/github.service';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.sass']
+  styleUrls: []
 })
 export class FormComponent implements OnInit {
 

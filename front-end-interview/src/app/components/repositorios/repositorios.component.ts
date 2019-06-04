@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-repositorios',
   templateUrl: './repositorios.component.html',
-  styleUrls: ['./repositorios.component.sass']
+  styleUrls: []
 })
 export class RepositoriosComponent implements OnInit {
 
